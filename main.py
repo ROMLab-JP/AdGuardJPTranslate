@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import sys
 import os
-if not os.path.exists('i18n/AdGuard Applications.xml'):
+if not os.path.exists('sources/.xml'):
     print("file does not exist")
     sys.exit(1)
 # XMLファイルを解析してroot要素を取得する
@@ -10,10 +10,10 @@ tree = ET.parse('i18n/AdGuard Applications.xml')
 root = tree.getroot()
 
 # plurals要素を取得する
-plurals_elements = root.findall("./plurals")
+plurals_elements = root.findall("./values-ja/plurals")
 
 # strings要素を取得する
-strings_elements = root.findall("./string")
+strings_elements = root.findall("./values-ja/string")
 
 # plurals.xmlファイルに書き出す
 plurals_root = ET.Element('resources')

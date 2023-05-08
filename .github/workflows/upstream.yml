@@ -7,20 +7,31 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
-    - name: download
+    - name: setup jq
       run: |
         sudo apt update
         sudo apt -y install jq
+
+    - name: download from crowdin
+      run: |
         crowdin_url="https://api.crowdin.com/api/v2/projects/${{secrets.CROWDIN_PROJECT_ID}}/translations/exports"
         echo "$crowdin_url"
         download_url=`curl -X POST "$crowdin_url" -d '{"targetLanguageId":"en","format": "android","fileIds": [17566]}' -H "Authorization: Bearer ${{secrets.CROWDIN_PERSONAL_TOKEN}}" -H "Content-Type: application/json" | jq -r .data.url`
-        curl -L "$download_url" -o "sources/AdGuard Applications.xml"
+        curl -L "$download_url" -o "sources/strings.xml"
+
+    - name: commit
+      run: |
         git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add .
         git commit -m "Update Translate"
-        git push
+
+    - name: push changes
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
