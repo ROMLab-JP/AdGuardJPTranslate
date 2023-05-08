@@ -20,7 +20,7 @@ jobs:
       run: |
         crowdin_url="https://api.crowdin.com/api/v2/projects/${{secrets.CROWDIN_PROJECT_ID}}/translations/exports"
         echo "$crowdin_url"
-        download_url=`curl -X POST "$crowdin_url" -d '{"targetLanguageId":"en","format": "android","fileIds": [17566]}' -H "Authorization: Bearer ${{secrets.CROWDIN_PERSONAL_TOKEN}}" -H "Content-Type: application/json" | jq -r .data.url`
+        download_url=`curl -X POST "$crowdin_url" -d '{"targetLanguageId":"en","format": "android","fileIds": [19625]}' -H "Authorization: Bearer ${{secrets.CROWDIN_PERSONAL_TOKEN}}" -H "Content-Type: application/json" | jq -r .data.url`
         curl -L "$download_url" -o "sources/strings.xml"
 
     - name: commit
