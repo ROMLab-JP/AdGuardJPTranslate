@@ -2,23 +2,31 @@ name: Daily Build
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron:  '30 23 * * *'
+#  schedule:
+#    - cron:  '30 23 * * *'
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
       with:
         python-version: '3.10' 
-    - name: download
+
+    - name: run .py
       run: |
         python main.py
+
+    -name: commit
         git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add .
         git commit -m "Update Translate"
-        git push
+
+    - name: push changes
+    - uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
