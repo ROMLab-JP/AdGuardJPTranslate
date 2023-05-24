@@ -564,7 +564,7 @@ Idle time: %d s
   <string name="preferences_proxy_summary">プロキシサーバーを経由してデバイスのトラフィックをルーティングできるようにします。</string>
   <string name="preferences_proxy_summary_integration_on">Allows to route your device\'s traffic through a proxy server&lt;br/&gt;&lt;br/&gt;&lt;font color=\"%1$s\"&gt;This setting isn\'t applied because integration with AdGuard VPN is on&lt;/font&gt;</string>
   <string name="preferences_proxy_integration_transitive_snack_title">To use this setting, turn off integration with AdGuard VPN</string>
-  <string name="preferences_proxy_integration_transitive_snack_access_button_title">Go to</string>
+  <string name="preferences_proxy_integration_transitive_snack_access_button_title">Configure</string>
   <string name="preferences_proxy_proxy_server_title">プロキシサーバー</string>
   <string name="preferences_proxy_proxy_server_summary">なし</string>
   <string name="preferences_proxy_integrate_with_tor">Torインテグレーション設定</string>
@@ -1214,7 +1214,6 @@ Idle time: %d s
   <string name="purchases_main_button_use_promocode">クーポンを使う</string>
   <string name="purchases_main_checkbox_subscribe">AdGuardメールマガジンを受け取る
 （この購読はいつでも解除できます）</string>
-  <string name="purchases_main_text_eula">続行することで<u><font color="#FF67B279">ご利用条件</font></u>に同意したことになります。</string>
   <string name="purchases_main_text_adguard_premium">AdGuardプレミアム</string>
   <string name="purchases_main_text_tariffs_month">%s/月</string>
   <string name="purchases_main_text_tariffs_year">%s/年</string>
