@@ -557,7 +557,7 @@
   <string name="preferences_proxy_summary">Allows to route your device\'s traffic through a proxy server</string>
   <string name="preferences_proxy_summary_integration_on">Allows to route your device\'s traffic through a proxy server&lt;br/&gt;&lt;br/&gt;&lt;font color=\"%1$s\"&gt;This setting isn\'t applied because integration with AdGuard VPN is on&lt;/font&gt;</string>
   <string name="preferences_proxy_integration_transitive_snack_title">To use this setting, turn off integration with AdGuard VPN</string>
-  <string name="preferences_proxy_integration_transitive_snack_access_button_title">Go to</string>
+  <string name="preferences_proxy_integration_transitive_snack_access_button_title">Configure</string>
   <string name="preferences_proxy_proxy_server_title">Proxy server</string>
   <string name="preferences_proxy_proxy_server_summary">None</string>
   <string name="preferences_proxy_integrate_with_tor">Integrate with Tor</string>
@@ -1185,7 +1185,6 @@
   <string name="purchase_main_tap_to_activate_free_trial">Tap to activate your Free Trial. No card info required.</string>
   <string name="purchases_main_button_use_promocode">Use a promo code</string>
   <string name="purchases_main_checkbox_subscribe">Subscribe to our newsletter\n(You can unsubscribe at any time)</string>
-  <string name="purchases_main_text_eula">By continuing, you agree to the &lt;u&gt;&lt;font color=\"#FF67B279\"&gt;terms&lt;/font&gt;&lt;/u&gt;</string>
   <string name="purchases_main_text_adguard_premium">AdGuard Premium</string>
   <string name="purchases_main_text_tariffs_month">%s/month</string>
   <string name="purchases_main_text_tariffs_year">%s/year</string>
