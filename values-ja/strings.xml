@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="unit_number_degree_thousand_one_sign">%.1fK</string>
+  <string name="unit_number_degree_ten_thousands_one_sign">%.1f0K</string>
+  <string name="unit_number_degree_hundred_thousands_one_sign">%.1f00K</string>
   <string name="unit_number_degree_million_one_sign">%.1fM</string>
+  <string name="unit_number_degree_ten_millions_one_sign">%.0fM</string>
+  <string name="unit_number_degree_hundred_millions_one_sign">%.1f00M</string>
+  <string name="unit_number_degree_trillion_one_sign">%.1fT</string>
   <string name="unit_number_degree_thousand_two_signs">%.0fK</string>
+  <string name="unit_number_degree_ten_thousands_two_signs">%.0f0K</string>
+  <string name="unit_number_degree_hundred_thousands_two_signs">%.0f00K</string>
   <string name="unit_number_degree_million_two_signs">%.0fM</string>
+  <string name="unit_number_degree_ten_millions_two_signs">%.0f0M</string>
+  <string name="unit_number_degree_hundred_millions_two_signs">%.0f00M</string>
   <string name="unit_information_quantity_byte">%.1f B</string>
   <string name="unit_information_quantity_byte_rounded">%.0f B</string>
   <string name="unit_information_quantity_kilobyte">%.1fKB</string>
@@ -75,9 +84,23 @@
   <string name="updates_summary_error">更新に失敗しました</string>
   <string name="updates_update_app_button">アプリを更新する</string>
   <string name="updates_check_updates_button">更新を確認</string>
-  <string name="updates_release_notes_dialog_title">AdGuard v%s の更新内容</string>
+  <string name="updates_release_notes_dialog_title">What\'s new in AdGuard\nv%s</string>
   <string name="updates_update_app_failed_message">アプリの更新を開始できません</string>
   <string name="updates_update_app_failed_button">ウェブサイトへ</string>
+  <string name="updates_whats_new_dialog_title">What\'s new in AdGuard v4.0 for Android</string>
+  <string name="updates_whats_new_dialog_message">We\'ve completely redesigned and rewritten the app — let\'s see what\'s changed.</string>
+  <string name="updates_whats_new_dialog_full_redesign_title">Full redesign</string>
+  <string name="updates_whats_new_dialog_full_redesign_message">We\'ve made the design lighter and easier to understand and put the core features on a separate screen — now they\'re much easier to access.</string>
+  <string name="updates_whats_new_dialog_detailed_statistics_title">Detailed statistics</string>
+  <string name="updates_whats_new_dialog_detailed_statistics_message">Which apps and companies could potentially leak your data? Now you can view detailed stats for apps, companies, and domains.</string>
+  <string name="updates_whats_new_dialog_new_firewall_title">New Firewall</string>
+  <string name="updates_whats_new_dialog_new_firewall_message">Now you can control the access to the Internet for all your apps — if you wish, prevent them from using the Internet without your knowledge.</string>
+  <string name="updates_whats_new_dialog_improved_integration_title">Improved integration\nwith AdGuard VPN</string>
+  <string name="updates_whats_new_dialog_improved_integration_message">We\'ve significantly improved the stability of the Integration mode. What\'s more, you can now exclude apps from your proxy — even from AdGuard VPN!</string>
+  <string name="updates_whats_new_dialog_learn_more_title">Want to learn more?</string>
+  <string name="updates_whats_new_dialog_learn_more_message">&lt;a href=\"%1$s\"&gt;Check out our blog&lt;/a&gt; for more information about the new version.</string>
+  <string name="updates_whats_new_dialog_got_it_button">OK</string>
+  <string name="updates_whats_new_dialog_release_notes_button">Release notes</string>
   <string name="preferences_title">設定</string>
   <string name="preferences_title_general_settings">一般設定</string>
   <string name="preferences_summary_general_settings">アプリの外観や機能を管理</string>
@@ -235,7 +258,7 @@
   <string name="https_filtering_exclusions_new_dialog_button_save">保存</string>
   <string name="https_filtering_exclusions_new_dialog_button_add">追加する</string>
   <string name="https_filtering_exclusions_dialog_input_error">このドメインは既に追加されています</string>
-  <string name="https_filtering_exclusions_dialog_input_error_invalid_url">このドメインは存在しません</string>
+  <string name="https_filtering_exclusions_dialog_input_error_invalid_url">This domain doesn\'t exist</string>
   <string name="https_filtering_exclusions_new_dialog_button_remove">削除</string>
   <string name="https_filtering_exclusions_new_dialog_label_domain_name">ドメイン</string>
   <string name="https_filtering_exclusions_new_dialog_label_include_subdomains">サブドメインも含む</string>
@@ -518,7 +541,7 @@ Idle time: %d s
   <string name="preferences_automation_available_options_title">自動化ルール</string>
   <string name="preferences_automation_available_options_summary">AdGuard ナレッジベースにおける自動化ルールの一覧</string>
   <string name="preferences_automation_pin_code_dialog_title">パスワード</string>
-  <string name="preferences_automation_pin_code_dialog_summary">intentのExtraフィールドにこのパスワードを追加します&lt;br/&gt;&lt;b&gt;(password: ******)&lt;/b&gt;</string>
+  <string name="preferences_automation_pin_code_dialog_summary">Add this password to the intent\'s Extra field <br/><b>(password: ******)</b></string>
   <string name="preferences_automation_pin_code_dialog_input_title">パスワード</string>
   <string name="preferences_automation_pin_code_dialog_hint">パスワードを入力して下さい</string>
   <string name="preferences_automation_pin_code_dialog_button">保存</string>
@@ -906,7 +929,7 @@ Idle time: %d s
   <string name="protection_note_integration_adguard_vpn_not_installed">AdGuard VPN がインストールされていません</string>
   <string name="protection_note_firewall">「ファイアウォール」を使用するには、端末の設定でアプリの使用アクセスを許可してください。</string>
   <string name="protection_firewall_usage_access_dialog_title">アプリの利用状況へのアクセスを許可してください</string>
-  <string name="protection_firewall_usage_access_dialog_summary">アプリを管理するためには、AdGuardに端末のアプリ使用データへのアクセスを許可してください。</string>
+  <string name="protection_firewall_usage_access_dialog_summary">We use this information only to help you manage Internet access for apps. We do not use it for any other purpose or share it with anyone. &lt;a href=\"%s\"&gt;Privacy policy&lt;/a&gt;</string>
   <string name="protection_firewall_usage_access_unavailable_dialog_title">アプリ使用設定を開けませんでした</string>
   <string name="protection_firewall_usage_access_unavailable_dialog_summary">ファイアウォールを有効にすることができません</string>
   <string name="protection_firewall_usage_access_dialog_button">設定を開く</string>
@@ -1149,6 +1172,8 @@ Idle time: %d s
   <string name="notification_channel_description_app_conflict">AdGuardと競合する可能性のあるアプリについての通知</string>
   <string name="notification_channel_name_media">メディア</string>
   <string name="notification_channel_description_media">メディア再生に関する通知</string>
+  <string name="notification_channel_name_license">ライセンス</string>
+  <string name="notification_channel_description_license">Notifications about license status and suggestions</string>
   <string name="notification_group_name_firewall">ファイアウォール</string>
   <string name="notification_group_description_firewall">最近のアプリ接続に関する通知</string>
   <string name="notification_group_name_app_conflict">アプリの干渉</string>
@@ -1214,6 +1239,7 @@ Idle time: %d s
   <string name="purchases_main_button_use_promocode">クーポンを使う</string>
   <string name="purchases_main_checkbox_subscribe">AdGuardメールマガジンを受け取る
 （この購読はいつでも解除できます）</string>
+  <string name="purchases_main_text_eula">続行することで<u><font color="#FF67B279">ご利用条件</font></u>に同意したことになります。</string>
   <string name="purchases_main_text_adguard_premium">AdGuardプレミアム</string>
   <string name="purchases_main_text_tariffs_month">%s/月</string>
   <string name="purchases_main_text_tariffs_year">%s/年</string>
@@ -1504,16 +1530,16 @@ Idle time: %d s
   <string name="about_license_key">ライセンスキー: %1$s</string>
   <string name="about_license_lifetime_subscription">永久ライセンス</string>
   <string name="about_license_log_out">Reset license</string>
-  <string name="about_license_expired">%s で有効期限切れしています。</string>
   <string name="about_license_subscription_expired">サブスクリプションが期限切れしました</string>
   <string name="about_license_license_expired">ライセンス有効期限切れ</string>
+  <string name="about_license_trial_expired">Trial expired</string>
   <string name="about_license_renewal">%s まで有効</string>
   <string name="protection_browsing_security_title">ブラウジング・セキュリティ</string>
   <string name="protection_browsing_security_summary">フィッシングサイト、悪質サイト、詐欺サイトへのアクセスをブロックします。</string>
   <string name="protection_browsing_security_premium_warning">製品版を購入しますと、この機能をご利用いただけます。</string>
   <string name="protection_browsing_security_switch">ブラウジング・セキュリティ</string>
   <string name="protection_browsing_security_content_title">フィッシングやマルウェアから保護します。</string>
-  <string name="protection_browsing_security_content_message">ユーザー様がそれぞれのウェブサイトにアクセスするたびに、AdGuard は悪質なドメインやフィッシング詐欺ドメインのデータベース（常に更新）を参照します。訪問しようとしているサイトが危険なウェブサイトである場合は、警告メッセージが表示されます。&lt;br/&gt;&lt;br/&gt;※AdGuard は、ウェブサイトのURLではなく、ハッシュプレフィックスをチェックするため、  ユーザー様がどのようなウェブサイトを訪問しているかという情報はAdGuardにはわかりません。&lt;br/&gt;&lt;br/&gt;&lt;a href=%s&gt;詳しくはこちら&lt;/a&gt;</string>
+  <string name="protection_browsing_security_content_message">Every time you visit a website, AdGuard consults the constantly updated database of malicious and phishing domains. If the website is dangerous, you\'ll see a warning message.&lt;br/&gt;&lt;br/&gt;As AdGuard checks hash prefixes, not website URLs, it doesn\'t know what websites you visit.&lt;br/&gt;&lt;br/&gt;&lt;a href=\"%s\"&gt;Learn more&lt;/a&gt;</string>
   <string name="adguard_vpn_integration_dialog_title_install_adguard_vpn_app">保護をダブルに</string>
   <string name="adguard_vpn_integration_dialog_summary_install_adguard_vpn_app">AdGuard は、広告やトラッカーから守ります。それに加えて AdGuard VPN をインストールしますと、匿名性確保とトラフィック暗号化でオンラインセキュリティをさらに向上できます。</string>
   <string name="adguard_vpn_integration_dialog_positive_button_title">AdGuard VPN をインストールする</string>
@@ -1657,8 +1683,6 @@ Idle time: %d s
   <string name="custom_dns_server_server_name">サーバー名</string>
   <string name="custom_dns_server_server_name_hint">サーバー名を入力してください</string>
   <string name="custom_dns_server_upstreams">サーバーアドレス（1行に1つ）:</string>
-  <string name="custom_dns_server_parallel_queries_title">Parallel resolving（パラレルレゾルビング）</string>
-  <string name="custom_dns_server_parallel_queries_summary">指定したすべてのサーバーに一度にリクエストを送信することで、DNS解決を高速化することができます。</string>
   <string name="custom_dns_server_upstreams_hint">IPアドレス、sdns://、quic://、https:// または tls://</string>
   <string name="custom_dns_server_known_dns_providers">&lt;a href=%1$s&gt;既知の DNS プロバイダ一覧&lt;/a&gt;</string>
   <string name="custom_dns_server_edit_transitive_warning_dns_protection_disabled">「DNS通信を保護」機能がオフになっているため、このDNSサーバーは無効です</string>
@@ -2095,4 +2119,40 @@ Wi-Fi通信をブロック</string>
   <string name="assistant_allowlist_summary_added">AdGuardはこのウェブサイトをフィルタリングをしないようになりました。</string>
   <string name="assistant_allowlist_summary_removed">AdGuardはこのウェブサイトをフィルタリングするようになりました。</string>
   <string name="assistant_placeholder_description">アクティビティがまだありません</string>
+  <string name="promo_notification_trial_available_one_day_title">A week of extended protection for free</string>
+  <string name="promo_notification_trial_available_one_day_message">No card info required. Tap to learn more</string>
+  <string name="promo_notification_trial_available_two_days_title">AdGuard won\'t let companies track you or sell your data</string>
+  <string name="promo_notification_trial_available_two_days_message">Test Tracking protection with a free 7-day trial. Tap to learn more</string>
+  <string name="promo_notification_trial_available_five_days_title">How can you tell if a website is dangerous?</string>
+  <string name="promo_notification_trial_available_five_days_message">Test Browsing Security with a free 7-day trial. Tap to learn more</string>
+  <string name="promo_notification_trial_available_eight_days_title">Don\'t let in-game ads distract you</string>
+  <string name="promo_notification_trial_available_eight_days_message">Test App filtering with a free 7-day trial. Tap to learn more</string>
+  <string name="promo_notification_trial_available_ten_days_title">Block even the most complex ads</string>
+  <string name="promo_notification_trial_available_ten_days_message">AdGuard Extra stops ads on any websites, even if they can bypass regular ad blockers. Test Userscripts with a free 7-day trial — tap to learn more</string>
+  <string name="promo_notification_trial_unavailable_one_day_title">Your extra layer of security</string>
+  <string name="promo_notification_trial_unavailable_one_day_message">🛡 Block ads in apps, prevent tracking, and protect yourself from malicious websites. Tap to learn more</string>
+  <string name="promo_notification_trial_unavailable_two_days_title">AdGuard won\'t let companies track you or sell your data</string>
+  <string name="promo_notification_trial_unavailable_two_days_message">Unlock Tracking protection with AdGuard\'s full version. Tap to learn more</string>
+  <string name="promo_notification_trial_unavailable_five_days_title">How can you tell if a website is dangerous?</string>
+  <string name="promo_notification_trial_unavailable_five_days_message">Unlock Browsing Security with AdGuard\'s full version. Tap to learn more</string>
+  <string name="promo_notification_trial_unavailable_eight_days_title">Don\'t let in-game ads distract you</string>
+  <string name="promo_notification_trial_unavailable_eight_days_message">Unlock App filtering with AdGuard\'s full version. Tap to learn more</string>
+  <string name="promo_notification_trial_unavailable_ten_days_title">AdGuard can block even the most complex ads</string>
+  <string name="promo_notification_trial_unavailable_ten_days_message">AdGuard Extra stops ads on any websites, even if they can bypass regular ad blockers. Unlock Userscripts with AdGuard\'s full version — tap to learn more</string>
+  <string name="license_expiration_notification_two_weeks_title">License ends in 14 days</string>
+  <string name="license_expiration_notification_two_weeks_message">💚  Let AdGuard keep you safe — tap to manage your license</string>
+  <string name="license_expiration_notification_one_day_title">License ends tomorrow</string>
+  <string name="license_expiration_notification_one_day_message">Stay protected from ads, trackers, and malicious websites — tap to manage your license</string>
+  <string name="license_expiration_notification_less_than_a_day_title">License ends today</string>
+  <string name="license_expiration_notification_less_than_a_day_message">👑 Don\'t lose the perks of the full version — tap to manage your license</string>
+  <string name="license_expiration_notification_expired_title">ライセンス有効期限切れ</string>
+  <string name="license_expiration_notification_expired_message">⚠️ Your device is not protected from trackers and malicious websites. Tap to manage your license</string>
+  <string name="trial_expiration_notification_three_days_title">Trial ends in 3 days</string>
+  <string name="trial_expiration_notification_three_days_message">💚  Let AdGuard keep you safe — tap to manage your license</string>
+  <string name="trial_expiration_notification_one_day_title">Trial ends tomorrow</string>
+  <string name="trial_expiration_notification_one_day_message">Stay protected from ads, trackers, and malicious websites — tap to manage your license</string>
+  <string name="trial_expiration_notification_less_than_a_day_title">Trial ends today</string>
+  <string name="trial_expiration_notification_less_than_a_day_message">👑 Don\'t lose the perks of the full version — tap to manage your license</string>
+  <string name="trial_expiration_notification_expired_title">Trial expired</string>
+  <string name="trial_expiration_notification_expired_message">⚠️ Your device is not protected from trackers and malicious websites. Tap to manage your license</string>
 </resources>
