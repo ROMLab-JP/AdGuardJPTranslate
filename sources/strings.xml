@@ -2084,7 +2084,7 @@
   <string name="promo_notification_trial_unavailable_eight_days_message">Unlock App filtering with AdGuard\'s full version. Tap to learn more</string>
   <string name="promo_notification_trial_unavailable_ten_days_title">AdGuard can block even the most complex ads</string>
   <string name="promo_notification_trial_unavailable_ten_days_message">AdGuard Extra stops ads on any websites, even if they can bypass regular ad blockers. Unlock Userscripts with AdGuard\'s full version — tap to learn more</string>
-  <string name="license_expiration_notification_two_weeks_title">License ends in 14 days</string>
+  <string name="license_expiration_notification_two_weeks_title">License ends in 7 days</string>
   <string name="license_expiration_notification_two_weeks_message">💚  Let AdGuard keep you safe — tap to manage your license</string>
   <string name="license_expiration_notification_one_day_title">License ends tomorrow</string>
   <string name="license_expiration_notification_one_day_message">Stay protected from ads, trackers, and malicious websites — tap to manage your license</string>
