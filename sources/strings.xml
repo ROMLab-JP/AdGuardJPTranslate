@@ -900,7 +900,7 @@
   <string name="protection_integration_summary">Encrypts your traffic and makes you anonymous online</string>
   <string name="protection_note_integration_enabled">Integration mode is enabled</string>
   <string name="protection_note_integration_disabled">Integration mode is disabled</string>
-  <string name="protection_note_integration_update_adguard">Integration impossible: upgrade your AdGuard app</string>
+  <string name="protection_note_integration_update_adguard">Integration impossible: update your AdGuard app</string>
   <string name="protection_note_integration_update_adguard_vpn">Integration impossible: upgrade your AdGuard VPN app</string>
   <string name="protection_note_integration_failed">Integration failed. Contact support for help</string>
   <string name="protection_note_integration_adguard_vpn_not_installed">AdGuard VPN is not installed</string>
@@ -1210,7 +1210,6 @@
   <string name="purchase_main_tap_to_activate_free_trial">Tap to activate your Free Trial. No card info required.</string>
   <string name="purchases_main_button_use_promocode">Use a promo code</string>
   <string name="purchases_main_checkbox_subscribe">Subscribe to our newsletter\n(You can unsubscribe at any time)</string>
-  <string name="purchases_main_text_eula">By continuing, you agree to the &lt;u&gt;&lt;font color=\"#FF67B279\"&gt;terms&lt;/font&gt;&lt;/u&gt;</string>
   <string name="purchases_main_text_adguard_premium">AdGuard Premium</string>
   <string name="purchases_main_text_tariffs_month">%s/month</string>
   <string name="purchases_main_text_tariffs_year">%s/year</string>
@@ -1517,11 +1516,11 @@
   <string name="adguard_vpn_integration_dialog_integration_enabled_title">Shields are doubled</string>
   <string name="adguard_vpn_integration_dialog_integration_enabled_summary">AdGuard VPN and Ad Blocker apps are compatible and work together to protect you</string>
   <string name="adguard_vpn_integration_dialog_integration_enabled_button">Got it</string>
-  <string name="adguard_vpn_integration_dialog_title_update_adguard_app">Upgrade AdGuard to use it with AdGuard VPN</string>
-  <string name="adguard_vpn_integration_dialog_summary_update_adguard_app">AdGuard and AdGuard VPN can work together. To make them compatible, upgrade AdGuard</string>
-  <string name="adguard_vpn_integration_dialog_title_update_adguard_vpn_app">Upgrade AdGuard VPN to use it with AdGuard</string>
-  <string name="adguard_vpn_integration_dialog_summary_update_adguard_vpn_app">AdGuard and AdGuard VPN can work together. To make them compatible, upgrade AdGuard VPN</string>
-  <string name="adguard_vpn_integration_dialog_primary_button_title">Upgrade</string>
+  <string name="adguard_vpn_integration_dialog_title_update_adguard_app">Update AdGuard to use it with AdGuard VPN</string>
+  <string name="adguard_vpn_integration_dialog_summary_update_adguard_app">AdGuard and AdGuard VPN can work together. To make them compatible, update AdGuard</string>
+  <string name="adguard_vpn_integration_dialog_title_update_adguard_vpn_app">Update AdGuard VPN to use it with AdGuard</string>
+  <string name="adguard_vpn_integration_dialog_summary_update_adguard_vpn_app">AdGuard and AdGuard VPN can work together. To make them compatible, update AdGuard VPN</string>
+  <string name="adguard_vpn_integration_dialog_primary_button_title">Update</string>
   <string name="preferences_adguard_vpn_integration_title_integration_mode">Integration with AdGuard VPN</string>
   <string name="preferences_adguard_vpn_integration_summary_integration_mode">Allows using AdGuard and AdGuard VPN simultaneously\nNote: With this option on, you can\'t use Exclusions or choose a DNS server for AdGuard VPN</string>
   <string name="preferences_adguard_vpn_integration_title_configure_adguard_vpn">Open AdGuard VPN</string>
