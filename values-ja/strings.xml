@@ -923,7 +923,7 @@ Idle time: %d s
   <string name="protection_integration_summary">通信を暗号化し、IPアドレスを隠し、個人情報と匿名性を保護します。</string>
   <string name="protection_note_integration_enabled">併用モードが有効です。</string>
   <string name="protection_note_integration_disabled">併用モードはオフになっています</string>
-  <string name="protection_note_integration_update_adguard">併用できません。AdGuard VPN アプリをアップグレードしてください。</string>
+  <string name="protection_note_integration_update_adguard">Integration impossible: update your AdGuard app</string>
   <string name="protection_note_integration_update_adguard_vpn">併用できません: AdGuard VPN アプリを更新してください。</string>
   <string name="protection_note_integration_failed">統合（併用）できません。サポートにお問い合わせください。</string>
   <string name="protection_note_integration_adguard_vpn_not_installed">AdGuard VPN がインストールされていません</string>
@@ -1239,7 +1239,6 @@ Idle time: %d s
   <string name="purchases_main_button_use_promocode">クーポンを使う</string>
   <string name="purchases_main_checkbox_subscribe">AdGuardメールマガジンを受け取る
 （この購読はいつでも解除できます）</string>
-  <string name="purchases_main_text_eula">続行することで<u><font color="#FF67B279">ご利用条件</font></u>に同意したことになります。</string>
   <string name="purchases_main_text_adguard_premium">AdGuardプレミアム</string>
   <string name="purchases_main_text_tariffs_month">%s/月</string>
   <string name="purchases_main_text_tariffs_year">%s/年</string>
@@ -1551,11 +1550,11 @@ Idle time: %d s
   <string name="adguard_vpn_integration_dialog_integration_enabled_title">保護がダブルになりました。</string>
   <string name="adguard_vpn_integration_dialog_integration_enabled_summary">AdGuard VPN とAdGuard広告ブロッカーアプリは互換性があり、連携してあなたを守ります。</string>
   <string name="adguard_vpn_integration_dialog_integration_enabled_button">OK</string>
-  <string name="adguard_vpn_integration_dialog_title_update_adguard_app">AdGuard VPNと併用するにはAdGuardを更新してください。</string>
-  <string name="adguard_vpn_integration_dialog_summary_update_adguard_app">AdGuard と AdGuard VPN は併用可能です。両アプリの互換性のために、AdGuard を更新してください。</string>
-  <string name="adguard_vpn_integration_dialog_title_update_adguard_vpn_app">併用するには AdGuard VPN を更新してください。</string>
-  <string name="adguard_vpn_integration_dialog_summary_update_adguard_vpn_app">AdGuard と AdGuard VPN は併用可能です。両アプリの互換性のために、AdGuard VPN アプリを更新してください。</string>
-  <string name="adguard_vpn_integration_dialog_primary_button_title">アップグレード</string>
+  <string name="adguard_vpn_integration_dialog_title_update_adguard_app">Update AdGuard to use it with AdGuard VPN</string>
+  <string name="adguard_vpn_integration_dialog_summary_update_adguard_app">AdGuard and AdGuard VPN can work together. To make them compatible, update AdGuard</string>
+  <string name="adguard_vpn_integration_dialog_title_update_adguard_vpn_app">Update AdGuard VPN to use it with AdGuard</string>
+  <string name="adguard_vpn_integration_dialog_summary_update_adguard_vpn_app">AdGuard and AdGuard VPN can work together. To make them compatible, update AdGuard VPN</string>
+  <string name="adguard_vpn_integration_dialog_primary_button_title">Update</string>
   <string name="preferences_adguard_vpn_integration_title_integration_mode">AdGuard VPN との併用モード</string>
   <string name="preferences_adguard_vpn_integration_summary_integration_mode">AdGuard と AdGuard VPN を同時に使用できるようにします。
 ※このオプションをオンにすると、AdGuard VPN で「VPN対象外リスト」機能を使用したり、AdGuard VPN でDNSサーバーを選択したりすることができなくなります。</string>
