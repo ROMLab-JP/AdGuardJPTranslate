@@ -8,7 +8,7 @@
   <string name="unit_number_degree_hundred_millions_one_sign">%.1f00M</string>
   <string name="unit_number_degree_trillion_one_sign">%.1fT</string>
   <string name="unit_number_degree_thousand_two_signs">%.0fK</string>
-  <string name="unit_number_degree_ten_thousands_two_signs">%.0f0K</string>
+  <string name="unit_number_degree_ten_thousands_two_signs">%.2f0K</string>
   <string name="unit_number_degree_hundred_thousands_two_signs">%.0f00K</string>
   <string name="unit_number_degree_million_two_signs">%.0fM</string>
   <string name="unit_number_degree_ten_millions_two_signs">%.0f0M</string>
@@ -360,9 +360,7 @@
   <string name="preferences_advanced_settings_watchdog_summary_disabled">無効</string>
   <string name="preferences_advanced_settings_watchdog_middle_note">Allow setting alarms and reminders</string>
   <string name="preferences_advanced_settings_watchdog_dialog_title">ウォッチドッグ間隔</string>
-  <string name="preferences_advanced_settings_watchdog_dialog_summary">AdGuard がバッテリ最適化システムによってシャットダウンされたかどうかを確認し、 再起動を試みます。
-
-間隔の値を「0」や空のままにすると、ウォッチドッグ機能は無効になります。</string>
+  <string name="preferences_advanced_settings_watchdog_dialog_summary">Checks if AdGuard gets shut down by the battery optimization system and tries to restart it\n\nLeaving this field empty disables Watchdog</string>
   <string name="preferences_advanced_settings_watchdog_dialog_label">間隔 (秒)</string>
   <string name="preferences_advanced_settings_watchdog_dialog_hint">10 から 300 までの値を入力してください</string>
   <string name="preferences_advanced_settings_watchdog_dialog_save">保存</string>
@@ -526,6 +524,11 @@ Idle time: %d s
   <string name="preferences_low_level_settings_fallback_upstreams_details_input_error">無効なエントリーです。そのままにしておくと、最後に有効なエントリーが使用されます</string>
   <string name="preferences_low_level_settings_bootstrap_upstreams_details_input_error">有効なIPv4またはIPv6アドレスを入力してください</string>
   <string name="preferences_low_level_settings_keepalive_input_error">数字のみを使用してください</string>
+  <string name="preferences_low_level_dns_protection_transitive_snack">To apply this setting, enable <b>DNS protection</b></string>
+  <string name="preferences_low_level_https_filtering_transitive_snack">To apply this setting, enable <b>HTTPS filtering</b></string>
+  <string name="preferences_low_level_https_certificate_transitive_snack">To apply this setting, install AdGuard\'s security certificate</string>
+  <string name="preferences_low_level_routing_mode_transitive_snack">To apply this setting, use another <b>Routing mode</b></string>
+  <string name="preferences_low_level_routing_mode_transitive_snack_button">Go to</string>
   <string name="preferences_low_level_settings_dns_blocking_mode_details_adBlockRules_title">adblock-styleルールのブロックモード</string>
   <string name="preferences_low_level_settings_dns_blocking_mode_details_adBlockRules_description">広告ブロックルール構文に基づくDNSルールでブロックされたドメインに対する応答タイプ</string>
   <string name="preferences_low_level_settings_dns_blocking_mode_details_hostsRules_title">hostsルールのブロックモード</string>
@@ -621,7 +624,7 @@ Idle time: %d s
   <string name="preferences_edit_proxy_server_proxy_password_hint">プロキシが要求したときのみ</string>
   <string name="preferences_edit_proxy_server_check_connection">接続を確認する</string>
   <string name="preferences_edit_proxy_server_save">保存</string>
-  <string name="preferences_edit_proxy_server_delete">削除する</string>
+  <string name="preferences_edit_proxy_server_remove">削除</string>
   <string name="preferences_add_proxy_server_title">プロキシサーバーを追加する</string>
   <string name="preferences_add_proxy_server_save">保存して選択</string>
   <string name="preferences_proxy_server_connection_check_start">接続を確認中…</string>
@@ -660,6 +663,7 @@ Idle time: %d s
   <string name="preferences_app_settings_extensions_dialog_match">次のものと合致:</string>
   <string name="preferences_app_settings_extensions_dialog_homepage">ホームページ：</string>
   <string name="preferences_app_settings_extensions_dialog_add_button">追加する</string>
+  <string name="preferences_app_settings_extensions_dialog_back_button">戻る</string>
   <string name="preferences_app_settings_extensions_successfully_added_snack">%s が追加されました。</string>
   <string name="preferences_app_settings_extensions_successfully_added_snack_action">表示</string>
   <string name="preferences_app_settings_extensions_menu_reset_to_default">デフォルトにリセットする</string>
@@ -815,7 +819,7 @@ Idle time: %d s
   <string name="preferences_categories_vpn_integration">AdGuard VPN との併用モード</string>
   <string name="preferences_categories_general_settings">一般</string>
   <string name="preferences_categories_network_settings">ネットワーク設定</string>
-  <string name="preferences_categories_extensions">ユーザスクリプト</string>
+  <string name="preferences_categories_extensions">ユーザースクリプト</string>
   <plurals name="preferences_import_export_settings_dialog_category_userscripts_rules_count">
     <item quantity="other">%s userscripts</item>
   </plurals>
@@ -1234,38 +1238,6 @@ Idle time: %d s
   <string name="tracking_protection_main_switch_title">トラッキング防止</string>
   <string name="tracking_protection_other_filters_title">その他のプライバシーフィルター</string>
   <string name="tracking_protection_other_filters_summary">「フィルタ」で有効にしたもの: %d個</string>
-  <string name="purchases_main_description">あらゆるアプリでの広告ブロック、追跡からの高度な保護、マルウェアからの保護、カスタム・フィルタ</string>
-  <string name="purchase_main_tap_to_activate_free_trial">タップしてプレミアム版を試用する (決済情報不要)</string>
-  <string name="purchases_main_button_use_promocode">クーポンを使う</string>
-  <string name="purchases_main_checkbox_subscribe">AdGuardメールマガジンを受け取る
-（この購読はいつでも解除できます）</string>
-  <string name="purchases_main_text_adguard_premium">AdGuardプレミアム</string>
-  <string name="purchases_main_text_tariffs_month">%s/月</string>
-  <string name="purchases_main_text_tariffs_year">%s/年</string>
-  <string name="purchases_main_text_tariffs_lifetime">%s</string>
-  <string name="purchases_main_description_tariffs_year">税抜、1年分一括請求</string>
-  <string name="purchases_main_description_tariffs_month">一ヶ月あたり（1年分一括請求）、税抜</string>
-  <string name="purchases_main_description_tariffs_lifetime">税抜、1回限りのお支払い</string>
-  <string name="purchases_main_button_continue">お支払いへ進む</string>
-  <string name="purchases_enter_promocode_hint">クーポンを入力</string>
-  <string name="purchases_button_apply">適用する</string>
-  <string name="purchases_text_promocode_used">クーポン適用済みです</string>
-  <string name="purchases_text_promocode_applied_for_subscription">「%1$s」のクーポンが適用され、%2$s引きでご購入いただけます。</string>
-  <string name="purchases_promocode_details_title">クーポンが適用されました。</string>
-  <string name="purchases_promocode_details_summary_all">すべての料金プラン、%d%%引きになりました。</string>
-  <string name="purchases_promocode_details_summary_some">一部の料金プラン、%d%%引きになりました。</string>
-  <string name="purchases_promocode_details_summary_certain">「%2$s」の料金プラン、%1$d%%引きになりました。</string>
-  <string name="purchases_promocode_details_button_reset">クーポンをリセットする</string>
-  <string name="purchases_promocode_details_button_continue">続行</string>
-  <string name="purchases_error_promocode_invalid">クーポンは無効です</string>
-  <string name="purchases_error_coupon_invalid">入力いただいたクーポンは無効です</string>
-  <string name="purchases_error_email_invalid">ご入力のメールアドレスは無効です</string>
-  <string name="purchases_error_unknown">お支払いページへリダイレクト中にエラーが発生しました。</string>
-  <string name="purchases_subscription_plan_title">サブスクリプション・プラン</string>
-  <string name="purchases_subscription_term_title">サブスクリプション期間</string>
-  <string name="purchases_payment_method_title">支払い方法</string>
-  <string name="purchase_enter_email_hint">お使いのメールアドレスを入力してください</string>
-  <string name="purchases_enter_email_description">ライセンスキーとAdGuardアカウントのパスワードは、このメールアドレスに送信されます。この個人アカウントでは、ライセンスキーを管理できます。</string>
   <string name="annoyances_blocking_title">迷惑要素ブロック</string>
   <string name="annoyances_blocking_summary">Cookie通知、SNSウィジェットやページ内ポップアップなどの迷惑なWeb要素をブロックします。</string>
   <string name="annoyances_blocking_note">何も選択されていないため、現在ブロックされている迷惑要素はありません。</string>
@@ -1329,6 +1301,7 @@ Idle time: %d s
   <string name="protection_dns_server_transitive_snack_message_private_dns_enabled_public_server">パブリックDNSサーバーに接続するには、デバイスの設定で「プライベートDNS」を無効にしてください。</string>
   <string name="protection_dns_server_transitive_snack_message_private_dns_enabled_custom_server">カスタムDNSサーバーに接続するには、デバイスの設定で「プライベートDNS」を無効にしてください。</string>
   <string name="protection_dns_server_dialog_upstreams_error">このサーバーは応答しないか、存在しません</string>
+  <string name="protection_dns_server_dialog_upstreams_ipv6_error">To use this server, enable IPv6 filtering in Low-level settings</string>
   <string name="protection_dns_server_server_removed">DNSサーバーは削除されました。</string>
   <string name="protection_dns_server_dialog_upstreams_error_empty">この欄に内容を記入してください</string>
   <string name="protection_dns_server_dialog_upstreams_error_invalid">有効なプロトロコルを入力してください</string>
