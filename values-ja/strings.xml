@@ -528,7 +528,7 @@ Idle time: %d s
   <string name="preferences_low_level_https_filtering_transitive_snack">To apply this setting, enable <b>HTTPS filtering</b></string>
   <string name="preferences_low_level_https_certificate_transitive_snack">To apply this setting, install AdGuard\'s security certificate</string>
   <string name="preferences_low_level_routing_mode_transitive_snack">To apply this setting, use another <b>Routing mode</b></string>
-  <string name="preferences_low_level_routing_mode_transitive_snack_button">Go to</string>
+  <string name="preferences_low_level_routing_mode_transitive_snack_button">Configure</string>
   <string name="preferences_low_level_settings_dns_blocking_mode_details_adBlockRules_title">adblock-styleルールのブロックモード</string>
   <string name="preferences_low_level_settings_dns_blocking_mode_details_adBlockRules_description">広告ブロックルール構文に基づくDNSルールでブロックされたドメインに対する応答タイプ</string>
   <string name="preferences_low_level_settings_dns_blocking_mode_details_hostsRules_title">hostsルールのブロックモード</string>
